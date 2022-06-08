@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="-1" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" />
+  <link rel="stylesheet" href="login.css" media="screen">
+
+</head>
+
+<body class=" ring-1 ring-slate-900/5 bg-gray-900 login">
+  $(if chap-id)
+  <form name="sendin" action="$(link-login-only)" method="post">
+    <input type="hidden" name="username" />
+    <input type="hidden" name="password" />
+    <input type="hidden" name="dst" value="$(link-orig)" />
+    <input type="hidden" name="popup" value="true" />
+  </form>
+
+  <script type="text/javascript" src="md5.js"></script>
+  <script type="text/javascript">
+    <!--
+    function doLogin() {
+      document.sendin.username.value = document.login.username.value;
+      document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+      document.sendin.submit();
+      return false;
+    }
+    //
+
+    -->
+  </script>
+  $(endif)
+
+
+  <form class="vertical-form" name="login" action="$(link-login-only)" method="post" background="#A03472" $(if chap-id)
+    onSubmit="return doLogin()" $(endif)>
+
+    <h5 class=" mb-2 text-center text-2xl font-bold tracking-tight text-yellow-400 uppercase mx-auto my-3">
+      Peaknet Limited</h5>
+    <div class="max-w-sm  rounded-lg border  shadow-md bg-gray-800 border-gray-700 mx-auto mt-3">
+
+      <div class="flex flex-col items-center pb-10">
+        <img class="mb-3 w-24 h-24 rounded-full shadow-lg" src="logo.png" alt="Peaknet image">
+        <h5 class="mb-1 text-xl font-medium  text-white">Robert Ndirangu-Peaknet Manager</h5>
+        <span class="text-sm  text-gray-400">AI Engineer</span>
+        <div class="flex mt-4 space-x-3 lg:mt-6">
+          <a href="mailto:peaknetpro@gmail.com"
+            class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white  rounded-lg  focus:ring-4 focus:outline-none  bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
+            <svg class="w-6 h-6 mx-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
+                clip-rule="evenodd"></path>
+            </svg> Email Me
+          </a>
+          <a href="tel:0745 229 863"
+            class="inline-flex items-center py-2 px-4 text-sm font-medium text-center  rounded-lg border  focus:ring-4 focus:outline-none  bg-gray-800 text-white border-gray-600 hover:bg-gray-700 hover:border-gray-700 focus:ring-gray-700">
+            <svg class="w-6 h-6 mx-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z">
+              </path>
+              <path
+                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+              </path>
+            </svg>
+            Message / Call
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- component -->
+    <!-- Pricing section -->
+    <section class="w-full pt-16 pb-20 ">
+      <div class="px-10 mx-auto text-center max-w-7xl">
+        <h2 class="text-5xl font-bold text-blue-600 hover:underline">
+          Flexible <span class="text-gray-500  ">Hotspot</span> <span class="text-gray-500">Plans</span>
+        </h2>
+        <p class="mt-3 text-lg text-gray-500">Our flexible plans are designed to meet the needs of anyone.
+          Get internet connection on your SMART TV,LAPTOP,PC & on your PHONE at a fair price,call us on:
+          <span>
+            <a href="tel:0745 229 863">
+              &#x1F4DE;0745 229 863
+            </a>
+          </span>
+        </p>
+        <hr class="h-px mt-6 bg-gray-700 border-none w-10/12 mx-auto">
+        <h2 class="text-xl font-bold text-yellow-300 mt-4">
+          CHOOSE YOUR PACKAGE & SEND THE AMOUNT TO <span class="text-gray-400">0745229863</span> <br>
+          <span class="text-gray-500 text-sm">You Will get Password Instantly On Your Phone</span>
+        </h2>
+        <div class="grid gap-5 mt-12 lg:grid-cols-3 md:grid-cols-2">
+
+          <!-- Start First Plan -->
+          <!-- End First Plan -->
+          <div class="relative p-8 lg:p-6 xl:p-8 rounded-2xl m-1">
+
+            <div class="absolute inset-0 w-full h-full transform translate-x-2 translate-y-2 bg-gray-700 rounded-2xl">
+            </div>
+            <div class="bg-gray-800 absolute inset-0 w-full h-full border-2 border-gray-900 rounded-2xl"></div>
+            <div class="text-blue-600 relative flex pb-5 space-x-5 border-b border-gray-200 lg:space-x-3 xl:space-x-5">
+              <svg class="w-6 h-6 animate-ping mx-3" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                  clip-rule="evenodd"></path>
+              </svg>
+
+              <div class="relative flex flex-col items-start">
+                <h3 class="text-xl font-bold">Professional Plan</h3>
+                <p class="tracking-tight text-gray-500">
+                  <span class="text-sm transform inline-block -translate-y-2.5 relative">Ksh</span>
+                  <span class="text-3xl font-bold text-yellow-600">800</span>
+                  <span class="text-sm -translate-y-0.5 inline-block transform">/ Month</span>
+                </p>
+              </div>
+            </div>
+
+            <ul class="relative py-12 space-y-3">
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access up to 50Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Custom Internet &amp; Features</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access Up to 200Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Priority &amp; Support</span>
+
+              </li>
+            </ul>
+            <button type="button" onclick="focusScrollMethod()" class="relative flex items-center justify-center w-full px-5 py-1 hover:bg-gray-700 hover:border-gray-700
+            focus:ring-gray-700 text-lg font-medium text-white rounded-xl group">
+              <span
+                class="w-full h-full absolute inset-0 transform translate-y-1.5 translate-x-1.5 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ease-out duration-200 rounded-xl bg-blue-600"></span>
+              <span class="absolute inset-0 w-full h-full border-2 border-gray-900 rounded-xl"></span>
+              <span class="relative ">Choose Plan</span>
+              <svg class="w-5 h-5 ml-2 transition-all duration-200 ease-out transform group-hover:translate-x-1"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+
+          </div>
+          <!-- Start Middle Plan -->
+          <div class="relative p-8 lg:p-6 xl:p-8 rounded-2xl m-1">
+
+            <div class="absolute inset-0 w-full h-full transform translate-x-2 translate-y-2 bg-gray-700 rounded-2xl">
+            </div>
+            <div class="bg-gray-800 absolute inset-0 w-full h-full border-2 border-gray-900 rounded-2xl"></div>
+            <div class="text-blue-600 relative flex pb-5 space-x-5 border-b border-gray-200 lg:space-x-3 xl:space-x-5">
+              <svg class="w-6 h-6 animate-ping mx-3" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                  clip-rule="evenodd"></path>
+              </svg>
+
+              <div class="relative flex flex-col items-start">
+                <h3 class="text-xl font-bold">Mid-Professional Plan</h3>
+                <p class="tracking-tight text-gray-500">
+                  <span class="text-sm transform inline-block -translate-y-2.5 relative">Ksh</span>
+                  <span class="text-3xl font-bold text-yellow-600">180</span>
+                  <span class="text-sm -translate-y-0.5 inline-block transform">/ Week</span>
+                </p>
+              </div>
+            </div>
+
+            <ul class="relative py-12 space-y-3">
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access up to 40Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Custom Internet &amp; Features</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access Up to 200Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Priority &amp; Support</span>
+              </li>
+            </ul>
+
+            <button type="button" onclick="focusScrollMethod()"
+              class="relative flex items-center justify-center w-full px-5 py-1 hover:bg-gray-700 text-lg font-medium text-white rounded-xl group">
+              <span
+                class="w-full h-full absolute inset-0 transform translate-y-1.5 translate-x-1.5 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ease-out duration-200 rounded-xl bg-blue-600 hover:bg-gray-100"></span>
+              <span class="absolute inset-0 w-full h-full border-2 border-gray-900 rounded-xl"></span>
+              <span class="relative">Choose Plan</span>
+              <svg class="w-5 h-5 ml-2 transition-all duration-200 ease-out transform group-hover:translate-x-1"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+
+          </div>
+          <!-- End Middle Plan -->
+
+          <!-- Start Third Plan -->
+          <div class="relative p-8 lg:p-6 xl:p-8 rounded-2xl m-1">
+
+            <div class="absolute inset-0 w-full h-full transform translate-x-2 translate-y-2 bg-gray-700 rounded-2xl">
+            </div>
+            <div class="bg-gray-800 absolute inset-0 w-full h-full border-2 border-gray-900 rounded-2xl"></div>
+            <div class="text-blue-600 relative flex pb-5 space-x-5 border-b border-gray-200 lg:space-x-3 xl:space-x-5">
+              <svg class="w-6 h-6 animate-ping mx-3" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                  clip-rule="evenodd"></path>
+              </svg>
+
+              <div class="relative flex flex-col items-start">
+                <h3 class="text-xl font-bold">Low-Professional Plan</h3>
+                <p class="tracking-tight text-gray-500">
+                  <span class="text-sm transform inline-block -translate-y-2.5 relative">Ksh</span>
+                  <span class="text-3xl font-bold text-yellow-600">50</span>
+                  <span class="text-sm -translate-y-0.5 inline-block transform">/ Day</span>
+                </p>
+              </div>
+            </div>
+
+            <ul class="relative py-12 space-y-3">
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access up to 30Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Basic Internet &amp; Features</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access Up to 100Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Mid-Priority &amp; Support</span>
+              </li>
+            </ul>
+
+            <button type="button" onclick="focusScrollMethod()"
+              class="relative flex items-center justify-center w-full px-5 py-1 hover:bg-gray-700 text-lg font-medium text-white rounded-xl group">
+              <span
+                class="w-full h-full absolute inset-0 transform translate-y-1.5 translate-x-1.5 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ease-out duration-200 rounded-xl bg-blue-600"></span>
+              <span class="absolute inset-0 w-full h-full border-2 border-gray-900 rounded-xl"></span>
+              <span class="relative">Choose Plan</span>
+              <svg class="w-5 h-5 ml-2 transition-all duration-200 ease-out transform group-hover:translate-x-1"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+
+          </div>
+          <!-- End Third Plan -->
+
+          <!-- Start 4 Plan -->
+          <div class="relative p-8 lg:p-6 xl:p-8 rounded-2xl m-1">
+
+            <div class="absolute inset-0 w-full h-full transform translate-x-2 translate-y-2 bg-gray-700 rounded-2xl">
+            </div>
+            <div class="bg-gray-800 absolute inset-0 w-full h-full border-2 border-gray-900 rounded-2xl"></div>
+            <div class="text-blue-600 relative flex pb-5 space-x-5 border-b border-gray-200 lg:space-x-3 xl:space-x-5">
+              <svg class="w-6 h-6 animate-ping mx-3" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                  clip-rule="evenodd"></path>
+              </svg>
+
+              <div class="relative flex flex-col items-start">
+                <h3 class="text-xl font-bold">Basic Plan</h3>
+                <p class="tracking-tight text-gray-500">
+                  <span class="text-sm transform inline-block -translate-y-2.5 relative">Ksh</span>
+                  <span class="text-3xl font-bold text-yellow-600">30</span>
+                  <span class="text-sm -translate-y-0.5 inline-block transform">/ 12hrs</span>
+                </p>
+              </div>
+            </div>
+
+            <ul class="relative py-12 space-y-3">
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access up to 20Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Basic Internet &amp; Features</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access Up to 500Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Low-Priority &amp; Support</span>
+              </li>
+            </ul>
+
+            <button type="button" onclick="focusScrollMethod()"
+              class="relative flex items-center justify-center w-full px-5 py-1 hover:bg-gray-700 text-lg font-medium text-white rounded-xl group">
+              <span
+                class="w-full h-full absolute inset-0 transform translate-y-1.5 translate-x-1.5 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ease-out duration-200 rounded-xl bg-blue-600"></span>
+              <span class="absolute inset-0 w-full h-full border-2 border-gray-900 rounded-xl"></span>
+              <span class="relative">Choose Plan</span>
+              <svg class="w-5 h-5 ml-2 transition-all duration-200 ease-out transform group-hover:translate-x-1"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+
+          </div>
+          <!-- End 4 Plan -->
+
+          <!-- Start 5 Plan -->
+          <div class="relative p-8 lg:p-6 xl:p-8 rounded-2xl m-1">
+
+            <div class="absolute inset-0 w-full h-full transform translate-x-2 translate-y-2 bg-gray-700 rounded-2xl">
+            </div>
+            <div class="bg-gray-800 absolute inset-0 w-full h-full border-2 border-gray-900 rounded-2xl"></div>
+            <div class="text-blue-600 relative flex pb-5 space-x-5 border-b border-gray-200 lg:space-x-3 xl:space-x-5">
+              <svg class="w-6 h-6 fill-yellow-500 animate-ping mx-3" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                  clip-rule="evenodd"></path>
+              </svg>
+
+              <div class="relative flex flex-col items-start">
+                <h3 class="text-xl font-bold">Basic Plan</h3>
+                <p class="tracking-tight text-gray-500">
+                  <span class="text-sm transform inline-block -translate-y-2.5 relative">Ksh</span>
+                  <span class="text-3xl font-bold text-yellow-600">20</span>
+                  <span class="text-sm -translate-y-0.5 inline-block transform">/ 6hrs</span>
+                </p>
+              </div>
+            </div>
+
+            <ul class="relative py-12 space-y-3">
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access up to 20Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Basic Internet &amp; Features</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access Up to 500Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Low-Priority &amp; Support</span>
+              </li>
+            </ul>
+
+            <button type="button" onclick="focusScrollMethod()"
+              class="relative flex items-center justify-center w-full px-5 py-1 hover:bg-gray-700 text-lg font-medium text-white rounded-xl group">
+              <span
+                class="w-full h-full absolute inset-0 transform translate-y-1.5 translate-x-1.5 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ease-out duration-200 rounded-xl bg-blue-600"></span>
+              <span class="absolute inset-0 w-full h-full border-2 border-gray-900 rounded-xl"></span>
+              <span class="relative">Choose Plan</span>
+              <svg class="w-5 h-5 ml-2 transition-all duration-200 ease-out transform group-hover:translate-x-1"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+
+          </div>
+          <!-- End 5 Plan -->
+
+          <!-- Start 6 Plan -->
+          <div class="relative p-8 lg:p-6 xl:p-8 rounded-2xl m-1">
+
+            <div class="absolute inset-0 w-full h-full transform translate-x-2 translate-y-2 bg-gray-700 rounded-2xl">
+            </div>
+            <div class="bg-gray-800 absolute inset-0 w-full h-full border-2 border-gray-900 rounded-2xl"></div>
+            <div class="text-blue-600 relative flex pb-5 space-x-5 border-b border-gray-200 lg:space-x-3 xl:space-x-5">
+              <svg class="w-6 h-6 animate-ping mx-3" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                  clip-rule="evenodd"></path>
+              </svg>
+
+              <div class="relative flex flex-col items-start">
+                <h3 class="text-xl font-bold">Basic Plan</h3>
+                <p class="tracking-tight text-gray-500">
+                  <span class="text-sm transform inline-block -translate-y-2.5 relative">Ksh</span>
+                  <span class="text-3xl font-bold text-yellow-600">10</span>
+                  <span class="text-sm -translate-y-0.5 inline-block transform">/ hr</span>
+                </p>
+              </div>
+            </div>
+
+            <ul class="relative py-12 space-y-3">
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access up to 20Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Basic Internet &amp; Features</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Access Up to 500Mbps</span>
+              </li>
+              <li class="flex items-center space-x-2 text-sm font-medium text-gray-500">
+                <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span>Low-Priority &amp; Support</span>
+              </li>
+            </ul>
+
+            <button type="button" onclick="focusScrollMethod()"
+              class="relative flex items-center justify-center w-full px-5 py-1 hover:bg-gray-700 text-lg font-medium text-white rounded-xl group">
+              <span
+                class="w-full h-full absolute inset-0 transform translate-y-1.5 translate-x-1.5 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ease-out duration-200 rounded-xl bg-blue-600"></span>
+              <span class="absolute inset-0 w-full h-full border-2 border-gray-900 rounded-xl"></span>
+              <span class="relative">Choose Plan</span>
+              <svg class="w-5 h-5 ml-2 transition-all duration-200 ease-out transform group-hover:translate-x-1"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+
+          </div>
+          <!-- End 6 Plan -->
+
+          <!-- Start Third Plan -->
+          <!-- End Third Plan -->
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Login section -->
+    <!-- component -->
+
+    <div class="flex min-h-screen items-center justify-center ">
+
+
+      <div class="min-h-1/2 bg-gray-900  border border-gray-900 rounded-2xl md:w-3/5  ">
+
+
+        <svg class="my-5 animate-pulse h-12 w-12 text-white mx-auto text-center" fill="currentColor"
+          viewBox=" 0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z">
+          </path>
+        </svg>
+
+        <h1 class="text-white text-2xl mx-auto px-4 text-center">Login To access internet</h1>
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+        <div id="focushere"
+          class="mx-4 sm:mx-24 md:mx-34 lg:mx-56 mx-auto  flex items-center space-y-4 py-16 font-semibold text-gray-500 flex-col">
+
+          <div id="box">
+            <div>
+              <input class=" my-5 w-full p-2 bg-gray-900 rounded-md  border border-gray-700 focus:border-blue-700"
+                id="user" autocomplete="on" name="username" type="text" value="$(username)" placeholder="Password" />
+            </div>
+            <div id="passDiv" class="hidden">
+              <input id="pass" class="w-full p-2 my-5 bg-gray-900 rounded-md border border-gray-700 " autocomplete="off"
+                name="password" type="password" label="false" placeholder="Password" />
+            </div>
+            <div>
+              <!-- <input class="w-full p-2 bg-gray-50 rounded-full font-bold text-gray-900 border border-gray-700 "
+                id="boton" name="submit" type="submit" value=" " /> -->
+
+              <input class="my-5 w-full p-2 bg-blue-500 rounded-full font-bold text-gray-200 border border-gray-700 "
+                id="boton" name="submit" type="submit" placeholder="Submit" value="Submit" />
+            </div>
+
+
+            <p>Not a member Yet?
+              <a id="myButton" class="font-semibold text-sky-700" href="">Register</a>
+            </p>
+          </div>
+
+
+        </div>
+        <div class='footer'>
+          <p>$(if trial == 'yes')
+            <a id="freebot" class="button"
+              href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">&nbsp;</a>$(endif)
+          </p>
+
+
+
+          <p>$(if error)
+            <div class="flex p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200 dark:text-red-800"
+              role="alert">
+              <svg class="inline flex-shrink-0 mr-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <div>
+                $(error)
+              </div>
+            </div>
+            $(endif)
+          </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+
+    <!-- footer -->
+    <!-- component -->
+
+    <h1 class="text-center text-white text-lg font-bold lg:text-2xl">
+      Join 1,000+ other and never miss out on new tips, Offers, and more.
+    </h1>
+    <hr class="h-px mt-6 bg-gray-700 border-none w-10/12 mx-auto">
+    <footer class="p-4  rounded-lg shadow  md:items-center md:justify-between md:p-6 ">
+      <div class="p-4  rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 ">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#"
+            class="hover:underline">Peaknet Limited</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </form>
+  <script type="text/javascript">
+    document.oncontextmenu = function () {
+      return false;
+    }
+    // function loginFocus() {
+    //   // document.login.username.focus()
+    //   document.getElementById("focushere").focus({
+    //     preventScroll: false
+    //   });
+    //}
+    focusScrollMethod = function getFocus() {
+      document.getElementById("myButton").focus({
+        preventScroll: false
+      });
+    }
+
+  </script>
+</body>
+
+</html>
